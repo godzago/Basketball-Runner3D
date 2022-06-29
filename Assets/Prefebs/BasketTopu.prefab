@@ -20,7 +20,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &5459430563756086596
 Transform:
   m_ObjectHideFlags: 0
@@ -127,4 +127,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 34987d7a116940f4aa0aa9db0097878b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  "topSay\u0131s\u0131": 0
+  Score: 0
+  ballGameObject: {fileID: 0}
+  ballGameObject1: {fileID: 0}
+  ballGameObject2: {fileID: 0}
+  ballGameObject3: {fileID: 0}
+  ballGameObject4: {fileID: 0}
+  button: {fileID: 0}
   forceMultipler: 2

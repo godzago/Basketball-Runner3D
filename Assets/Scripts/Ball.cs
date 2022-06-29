@@ -13,11 +13,85 @@ public class Ball : MonoBehaviour
 
     private bool ÝsShoot;
 
+    //--------------------------------Ýf bölümü-------------------------//
 
-    void Start()
+    public float topSayýsý;
+    public GameObject ballGameObject;
+    public GameObject ballGameObject1;
+    public GameObject ballGameObject2;
+    public GameObject ballGameObject3;
+    public GameObject ballGameObject4;
+    public GameObject button;
+
+    //--------------------------------Ýf bölümü-------------------------//
+
+    public void Awake()
     {
         rb = GetComponent<Rigidbody>();
+        PlayerPrefs.SetFloat("TopSayisi", topSayýsý);
     }
+    /*
+    void Start()
+    {
+        ballGameObject1.SetActive(false);
+        ballGameObject2.SetActive(false);
+        ballGameObject3.SetActive(false);
+        ballGameObject4.SetActive(false);
+        button.SetActive(false);
+    }
+
+    private void Update()
+    {
+       
+         if(topSayýsý == 1)
+        {          
+            ballGameObject.SetActive(true);
+            ballGameObject4.SetActive(false);
+            ballGameObject1.SetActive(false);
+            ballGameObject2.SetActive(false);
+            ballGameObject3.SetActive(false);
+            button.SetActive(false);
+
+        }
+         if (topSayýsý == 2)
+        {
+            ballGameObject1.SetActive(true);
+            ballGameObject2.SetActive(false);
+            ballGameObject4.SetActive(false);
+            ballGameObject.SetActive(false);                
+            ballGameObject3.SetActive(false);
+            button.SetActive(false);
+        }
+         if (topSayýsý == 3)
+        {
+            ballGameObject2.SetActive(true);
+            ballGameObject4.SetActive(false);
+            ballGameObject.SetActive(false);
+            ballGameObject1.SetActive(false);         
+            ballGameObject3.SetActive(false);
+            button.SetActive(false);
+        }
+         if (topSayýsý == 4)
+        {
+            ballGameObject3.SetActive(true);
+            ballGameObject4.SetActive(false);
+            ballGameObject.SetActive(false);
+            ballGameObject1.SetActive(false);
+            ballGameObject2.SetActive(false);
+            button.SetActive(false);
+        }
+         if (topSayýsý == 5)
+        {
+            ballGameObject4.SetActive(true);
+            ballGameObject.SetActive(false);
+            ballGameObject1.SetActive(false);
+            ballGameObject2.SetActive(false);
+            ballGameObject3.SetActive(false);
+            button.SetActive(false);
+        }
+    }
+    */
+
     private void OnMouseDown()
     {
         mousePressDownPos = Input.mousePosition;
@@ -50,6 +124,6 @@ public class Ball : MonoBehaviour
 
         rb.AddForce(new Vector3(Force.x, Force.y, Force.z) * forceMultipler);
         ÝsShoot = true;
-        Spawner.Instance.NewSpawnRequst();
+       // Spawner.Instance.NewSpawnRequst();
     }
 }
