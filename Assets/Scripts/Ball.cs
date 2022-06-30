@@ -14,23 +14,11 @@ public class Ball : MonoBehaviour
     private bool ÝsShoot;
 
     [SerializeField]
-    public static int topSayýsý = 5;
-
-    //--------------------------------Ýf bölümü-------------------------//
-
-    public GameObject ballGameObject;
-    public GameObject ballGameObject1;
-    public GameObject ballGameObject2;
-    public GameObject ballGameObject3;
-    public GameObject ballGameObject4;
-    public GameObject button;
-
-    //--------------------------------Ýf bölümü-------------------------//
+    public static int topSayýsý = 4;
 
     public void Start()
     {
         rb = GetComponent<Rigidbody>();
-        button.SetActive(false);
     }
   
     private void OnMouseDown()

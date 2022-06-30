@@ -11,10 +11,6 @@ public class BaketOludMu : MonoBehaviour
     public GameObject yazý6X;
     public GameObject yazý8X;
     public GameObject yazý10X;
-    public GameObject basketball;
-    public GameObject basketball2;
-    public GameObject basketball3;
-    public GameObject basketball4;
 
     public void Update()
     {
