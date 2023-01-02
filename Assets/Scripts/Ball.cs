@@ -14,7 +14,7 @@ public class Ball : MonoBehaviour
     private bool ÝsShoot;
 
     [SerializeField]
-    public static int topSayýsý = 4;
+    public static int topSayýsý = 5;
 
     public void Start()
     {
@@ -29,7 +29,7 @@ public class Ball : MonoBehaviour
     private void OnMouseDrag()
     {
         Vector3 forceInt = (Input.mousePosition - mousePressDownPos);
-        Vector3 forceV = (new Vector3(forceInt.x, forceInt.y, forceInt.z) * forceMultipler);
+        Vector3 forceV = (new Vector3(forceInt.x, forceInt.y, forceInt.z)) * forceMultipler;
 
         if (!ÝsShoot)
             DrawManager.Instance.UpdateTrajectory(forceV, rb, transform.position);
@@ -39,7 +39,7 @@ public class Ball : MonoBehaviour
     {
         DrawManager.Instance.HideLine();
         mouseRelesePos = Input.mousePosition;
-        Shoot(mousePressDownPos - mouseRelesePos);
+        Shoot(mouseRelesePos - mousePressDownPos);
     }
 
     [SerializeField] private float forceMultipler = 3;
