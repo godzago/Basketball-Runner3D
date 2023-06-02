@@ -1,4 +1,4 @@
-# FinishBasketballGame
+# Basketball Runner 3D
  
  This project was my first published project on the Play Store, and I learned a lot and improved throughout the process.
  
